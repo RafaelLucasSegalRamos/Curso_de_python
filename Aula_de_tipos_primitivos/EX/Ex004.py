@@ -1,0 +1,10 @@
+pala = str(input('Escreva alguma coisa: '))
+
+print(f'A frase escrita é alfabética? {pala.isalpha()}')
+print(f'A frase escrita é númerica? {pala.isnumeric()}')
+print(f'A frase escrita é alfanumeria? {pala.isalnum()}')
+# print(f'A frase escrita é decimal? {pala.isdecimal()}')
+print(f'A frase escrita está sem nenhum capslock? {pala.islower()}')
+print(f'A frase escrita está com apenas capslock? {pala.isupper()}')
+print(f'A frase escrita está vazia? {pala.isspace()}')
+print(f'A frase escrita está apenas com a primeira letra em Capslock? {pala.istitle()}')
