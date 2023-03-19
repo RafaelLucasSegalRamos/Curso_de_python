@@ -9,3 +9,6 @@ print(f'O texto {texto} fica assim dividido: {"-".join(texto.split())}')
 # Neste exemplo acima o '-'.join() coloca o '-' entre os itens da lista.
 print('-'.join(texto))
 # Já neste exemplo acima o '-'.join() coloca o '-' entre os caracteres da string .
+print('''Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita reiciendis officia est.
+Praesentium veritatis debitis ipsum ut voluptatem et autem, incidunt odit quidem cum fugiat 
+atque provident. Ex, pariatur dolores!''')
