@@ -2,13 +2,11 @@
 
 while True:
     try:
-        texto = str(input('Digite uma frase: ')).lower()
-
-        print(f'Nesta frase apareceram {texto.count("a")} "a"s')
-
-        print(f'Nesta frase o primeiro "a" apraceu no caractere: {texto.find("a")}')
-        print(f'Nesta frase o ultimo "a" apraceu no caractere: {texto.rfind("a")}')
-
+        ano = int(input('Digite um ano: '))
+        if ano % 4 == 0:
+            print(f'{ano} é BISSEXTO')
+        else:
+            print(f'{ano} NÃO É BISSEXTO')
 
 
         break

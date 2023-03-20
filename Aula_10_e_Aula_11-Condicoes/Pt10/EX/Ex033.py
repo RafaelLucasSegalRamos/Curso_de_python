@@ -1,12 +1,18 @@
 
 while True:
     try:
-        nome = str(input('Digite um nome completo: '))
+        listan = list()
 
-        nome = nome.split()
-
-        print(f'O seu primeiro nome é {nome[0]} e seu ultimo é {nome[len(nome)-1]}')
-
+        for c in range(1, 4):
+            listan.append(float(input('Digite um número: ')))
+        maxi = listan[0]
+        mini = listan[0]
+        for i in range(0, 3):
+            if listan[i] > maxi:
+                maxi = listan[i]
+            elif listan[i] < mini:
+                mini = listan[i]
+        print(f'Entre os números {listan} o maior foi {maxi}, e o menor foi {mini}')
         break
     except KeyboardInterrupt:
         print('\033[91m\nO usuário parou o progama\033[0m')

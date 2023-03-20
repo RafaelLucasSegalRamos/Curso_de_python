@@ -1,11 +1,19 @@
-
 while True:
     try:
-        nome = str(input('Digite um nome completo: '))
+        retas = list()
 
-        nome = nome.split()
+        for c in range(1, 4):
+            retas.append(int(input('Digite o tamanho de uma reta: ')))
 
-        print(f'O seu primeiro nome é {nome[0]} e seu ultimo é {nome[len(nome)-1]}')
+        if retas[0] >= retas[2] + retas[1] or retas[1] >= retas[2] + retas[0] or retas[2] >= retas[0] + retas[1]:
+            print('Este conjunto de retas não podem formar um triângulo')
+        else:
+            if retas[0] == retas[1] == retas[2]:
+                print('Essa retas podem formar um triangulo, e será um triangulo equilátero!')
+            elif retas[0] == retas[1] != retas[2] or retas[2] == retas[1] != retas[0] or retas[0] == retas[2] != retas[1]:
+                print('Essa retas podem formar um triangulo, e será um triangulo isósceles!')
+            elif retas[0] != retas[1] != retas[2]:
+                print('Essa retas podem formar um triangulo, e será um triangulo escaleno!')
 
         break
     except KeyboardInterrupt:

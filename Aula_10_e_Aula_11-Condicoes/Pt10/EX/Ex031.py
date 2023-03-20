@@ -1,11 +1,11 @@
 while True:
     try:
-        nome = str(input('Digite o seu nome inteiro: '))
+        kime = int(input('Digite quantos quilotros terá está viagem: '))
 
-        if 'silva' in nome.lower():
-            print('No seu nome tem Silva')
+        if kime <= 200:
+            print(f'\033[35mO custo da passagem será de {kime*0.5}')
         else:
-            print('No seu nome \033[91mnão\033[0m tem o sobrenome Silva')
+            print(f'\033[36mO custo desta viagem será de {kime*0.45}')
 
         break
     except KeyboardInterrupt:
