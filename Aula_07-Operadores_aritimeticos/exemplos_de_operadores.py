@@ -20,7 +20,7 @@ try:
     # e podendo fazer a junção de dois print que não fazem parte da mesma linha
     print(f'O resto da divisão entre {n1} e {n2} é {n1%n2}')
     print(f'O resultado da divisão (em número inteiro) entre {n1} e {n2} é {n1//n2}')
-    print(f'O resultado da divisão (em número inteiro) entre {n1} e {n2} é {math.pi:>^80}')
+    print(f'Este é o valor de Pi: {math.pi:>^40}')
     # na chave quando for colocar uma variavel no print é possivel mudar o jeito que a variavel aparece, por
     # é possivel forçar a raiz quadrada transformando a pontecia em fração, exemplo 9**2 == 81, 81**(1/2) == 9
 

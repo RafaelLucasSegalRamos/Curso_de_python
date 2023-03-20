@@ -5,7 +5,7 @@ from random import shuffle
 while True:
     try:
 
-        music_path = "/Utilizando_Modulos_aula08/EX/musica"
+        music_path = "C:/xampp/htdocs/Curso_de_python/Aula_08-Utilizando_Modulos/EX/musica"
 
         music_list = os.listdir(music_path)
         # song = AudioSegment.from_mp3("nightcore_circus.mp3")
