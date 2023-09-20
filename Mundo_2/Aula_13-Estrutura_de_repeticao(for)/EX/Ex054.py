@@ -1,6 +1,6 @@
 import datetime
-maior = 0
-menor = 0
+mai = 0
+men = 0
 
 while True:
     try:
@@ -10,12 +10,12 @@ while True:
             for i in range(0, 7):
                 anonas = int(input(f'\033[97mDigite o ano de nascimento da {i + 1}ª pessoa: '))
                 if ano - anonas >= 18:
-                    maior += 1
+                    mai += 1
                 else:
-                    menor += 1
-            print(f'\033[92m{maior} pessoas das 7 digitadas, atingiram a maior idade.')
+                    men += 1
+            print(f'\033[92m{mai} pessoas das 7 digitadas, atingiram a mai idade.')
             while True:
-                resp = str(input('\033[95mQuer continuar contando quantas pessoas atingiram a maior idade?[S/N]: ')).lower()
+                resp = str(input('\033[95mQuer continuar contando quantas pessoas atingiram a mai idade?[S/N]: ')).lower()
                 if resp in 'sn':
                     break
             if resp == 'n':

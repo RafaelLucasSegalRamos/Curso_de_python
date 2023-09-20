@@ -7,7 +7,7 @@ while True:
             if 0 <= nume <= 9999:
                 break
             else:
-                print('\033[91mO valor digitado é menor que 0, ou maior que 9999')
+                print('\033[91mO valor digitado é men que 0, ou mai que 9999')
         nume = str(nume)
         print(f'O número {nume} é dividido em {nume[3]} unidades,'
               f' {nume[2]} dezenas, {nume[1]} centenas e {nume[0]} milhares')

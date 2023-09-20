@@ -1,5 +1,3 @@
-# Descobrindo se um número é primo:
-
 while True:
     try:
         while True:

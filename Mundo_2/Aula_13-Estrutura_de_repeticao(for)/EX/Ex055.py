@@ -11,9 +11,9 @@ while True:
                         maior = peso
                     if peso < menor:
                         menor = peso
-            print(f'\033[92mO maior peso foi {maior}Kg e o menor foi {menor}Kg.')
+            print(f'\033[92mO mai peso foi {maior}Kg e o men foi {menor}Kg.')
             while True:
-                resp = str(input('\033[95mQuer continuar qual pessoa tem o maior peso e o menor?[S/N]: ')).lower()
+                resp = str(input('\033[95mQuer continuar qual pessoa tem o mai peso e o men?[S/N]: ')).lower()
                 if resp in 'sn':
                     break
             if resp == 'n':
