@@ -11,4 +11,4 @@ print('-'.join(texto))
 # Já neste exemplo acima o '-'.join() coloca o '-' entre os caracteres da string .
 print('''Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita reiciendis officia est.
 Praesentium veritatis debitis ipsum ut voluptatem et autem, incidunt odit quidem cum fugiat 
-atque provident. Ex, pariatur dolores!''')
+atque provident. EX, pariatur dolores!''')

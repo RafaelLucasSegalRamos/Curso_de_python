@@ -8,7 +8,7 @@ while True:
             for c in range(1, 5):
                 nome = str(input(f'\033[95mDigite o {c}º nome: '))
                 nomes.append(nome)
-                idade = int(input(f'\033[95mDigite a idade do {nome}: '))
+                idade = int(input(f'\033[95mDigite a idade do(a) {nome}: '))
                 if c == 1:
                     idadeMax = idade
                     nomeMax = nome
