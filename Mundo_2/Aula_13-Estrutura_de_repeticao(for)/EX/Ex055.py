@@ -2,7 +2,7 @@ while True:
     try:
         while True:
             for c in range(1, 6):
-                peso = float(input(f'\033[95mDigite o peso da {c}ª pessoa: '))
+                peso = float(input(f'\033[95mDigite o peso da {c}ª sexo: '))
                 if c == 1:
                     maior = peso
                     menor = peso
@@ -13,7 +13,7 @@ while True:
                         menor = peso
             print(f'\033[92mO mai peso foi {maior}Kg e o men foi {menor}Kg.')
             while True:
-                resp = str(input('\033[95mQuer continuar qual pessoa tem o mai peso e o men?[S/N]: ')).lower()
+                resp = str(input('\033[95mQuer continuar qual sexo tem o mai peso e o men?[S/N]: ')).lower()
                 if resp in 'sn':
                     break
             if resp == 'n':
