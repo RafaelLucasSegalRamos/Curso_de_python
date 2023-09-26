@@ -15,13 +15,15 @@ while True:
                 if tupla[n][j].count('a') > 0:
                     print(n+1, end=' ')
                     num_a += 1
+
         print("\nA letra 'a' apareceu {} vezes".format(num_a))
-        print('As vogais digitadas foram: ', end='')
+        print('\n')
         for n in tupla:
+            print(f'A palavra {n} tem as vogais: ', end='')
             for letra in n:
                 if letra in 'aeiou':
                     print(letra, end=' ')
-        print()
+            print('')
 
 
         while True:

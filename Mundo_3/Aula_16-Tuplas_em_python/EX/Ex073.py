@@ -5,13 +5,23 @@ while True:
                      'Cruzeiro', 'Botafogo', 'Santos', 'Bahia', 'Corinthians', 'Fluminense', 'Ceará', 'Vasco da Gama', 'Sport Recife',
                      'América Mineiro', 'Chapecoense', 'Vitória', 'Paraná')
             print('-=' * 15)
-            print(f'Lista de times do Brasileirão: {times}')
+            print(f'Lista de times do Brasileirão: ')
+            for c in times:
+                print(c+", ", end='')
+            print('\n')
             print('-=' * 15)
-            print(f'Os 5 primeiros são: {times[0:5]}')
+            print(f'Os 5 primeiros são:')
+            for c in range(0, 5):
+                print(f'{c + 1}º {times[c]}')
             print('-=' * 15)
-            print(f'Os 4 últimos são: {times[-4:]}')
+            print(f'Os 4 últimos são: ')
+            for c in range(16, 20):
+                print(f'{c + 1}º {times[c]}')
             print('-=' * 15)
-            print(f'Times em ordem alfabética: {sorted(times)}')
+            print(f'Times em ordem alfabética: ')
+            for c in sorted(times):
+                print(c+", ", end='')
+            print('\n')
             print('-=' * 15)
             print(f'O Chapecoense está na {times.index("Chapecoense") + 1}ª posição')
             print('-=' * 15)
