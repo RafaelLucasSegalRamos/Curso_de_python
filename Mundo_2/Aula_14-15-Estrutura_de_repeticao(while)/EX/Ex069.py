@@ -4,7 +4,7 @@ while True:
     try:
         cont_h = 0
         cont_18 = 0
-        cont_m_18 = 0
+        cont_m_20 = 0
         while True:
             while True:
                 idade = int(input('Qual a sua idade?  '))
@@ -19,7 +19,7 @@ while True:
                 if idade >= 18:
                     cont_18 += 1
                 if sexo in 'F' and idade < 20:
-                    cont_m_18 += 1
+                    cont_m_20 += 1
 
                 while True:
                     respo = str(input('Quer continuar adicionando pessoas? [S/N]  '))
@@ -31,7 +31,7 @@ while True:
                         print(f'\033[91mA resposta {respo}, não é uma das opções possiveis!\033[0m')
                 if respo.upper() in 'N':
                     break
-            print(f'Foram adicionados {cont_h} homens, {cont_18} pessoas com mais de 18 anos e {cont_m_18} mulheres com menos de 20 anos.')
+            print(f'Foram adicionados {cont_h} homens, {cont_18} pessoas com mais de 18 anos e {cont_m_20} mulheres com menos de 20 anos.')
             while True:
                 resp = str(input('Quer continuar o progama? [S/N]  '))[0]
                 if resp.upper() in 'S':

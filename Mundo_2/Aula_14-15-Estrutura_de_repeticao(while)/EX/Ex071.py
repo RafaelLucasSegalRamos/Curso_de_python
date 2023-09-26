@@ -2,7 +2,7 @@
 
 while True:
     try:
-        cont_50 = cont_20 = cont_10 = cont_1 = 0
+        cont_200 = cont_100 = cont_50 = cont_20 = cont_10 = cont_5 = cont_2 = cont_1 = 0
         while True:
             while True:
                 valor = int(input('Digite um valor: R$'))
@@ -11,7 +11,13 @@ while True:
                 else:
                     break
             while True:
-                if valor >= 50:
+                if valor >= 200:
+                    cont_200 += 1
+                    valor -= 200
+                elif valor >= 100:
+                    cont_100 += 1
+                    valor -= 100
+                elif valor >= 50:
                     cont_50 += 1
                     valor -= 50
                 elif valor >= 20:
@@ -20,15 +26,24 @@ while True:
                 elif valor >= 10:
                     cont_10 += 1
                     valor -= 10
+                elif valor >= 5:
+                    cont_5 += 1
+                    valor -= 5
+                elif valor >= 2:
+                    cont_2 += 1
+                    valor -= 2
                 elif valor >= 1:
                     cont_1 += 1
                     valor -= 1
                 else:
                     break
-
+            print(f'Notas de 200: {cont_200}')
+            print(f'Notas de 100: {cont_100}')
             print(f'Notas de 50: {cont_50}')
             print(f'Notas de 20: {cont_20}')
             print(f'Notas de 10: {cont_10}')
+            print(f'Notas de 5: {cont_5}')
+            print(f'Notas de 2: {cont_2}')
             print(f'Notas de 1 : {cont_1}')
             while True:
                 resp = str(input('Quer continuar o progama? [S/N]  '))[0]

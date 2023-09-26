@@ -9,7 +9,11 @@ while True:
                 if jogador in 'IP':
                     break
                 print('\033[91mOpção inválida\033[0m')
-            numJog = int(input('Digite um valor: '))
+            while True:
+                numJog = int(input('Digite um valor: '))
+                if 0 <= numJog <= 10:
+                    break
+                print(f'\033[91mComo você jogou {numJog}??\033[0m')
             numPC = randint(0, 10)
             soma = numJog + numPC
             if soma % 2 == 0:

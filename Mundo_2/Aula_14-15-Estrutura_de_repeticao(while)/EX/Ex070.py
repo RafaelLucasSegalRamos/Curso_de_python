@@ -18,9 +18,7 @@ while True:
                 nome_barato = nome
             while True:
                 resp = str(input('Quer continuar o progama? [S/N]  '))[0]
-                if resp.upper() in 'S':
-                    break
-                elif resp.upper() in 'N':
+                if resp.upper() in 'SN':
                     break
                 else:
                     print(f'\033[91mA resposta {resp}, não é uma das opções possiveis!\033[0m')
