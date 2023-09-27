@@ -1,8 +1,6 @@
 while True:
     try:
         lista_num = []
-        c = 1
-
         for c in range(0, 5):
             num = int(input(f'Digite um valor para a {c}° posição: '))
 
@@ -26,7 +24,6 @@ while True:
                 print('\033[91mTente novamente. ', end='')
         if continuar == 'N':
             break
-
 
     except KeyboardInterrupt:
         print('\033[91mO usuário decidiu parar o programa.\033[m')
