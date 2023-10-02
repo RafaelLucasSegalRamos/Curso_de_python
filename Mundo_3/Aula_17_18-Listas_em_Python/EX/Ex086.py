@@ -7,14 +7,14 @@ while True:
 
         for i in range(0, 3):
             for j in range(0, 3):
-                print(f'[{lista_num[i][j]:^5}]', end='')
+                print(f'[{lista_num[i][j]:^7}]', end='')
             print()
         while True:
             continuar2 = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
             if continuar2 in 'SN':
                 break
             else:
-                print('\033[91mTente novamente. ', end='')
+                print('\033[91mTente novamente. \033[0m', end='')
         if continuar2 == 'N':
             break
 

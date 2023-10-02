@@ -12,7 +12,6 @@ while True:
                 alunos.append([aluno, n1, n2])
             else:
                 print('\033[91mTente novamente. ', end='')
-                continue
             while True:
                 resp = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
                 if resp in "NS":
@@ -21,9 +20,10 @@ while True:
                     print('\033[91mTente novamente. \033[0m', end='')
             if resp == 'N':
                 break
+        print('-=' * 30)
         for i in range(0, len(alunos)):
             print(f'{i+1}º aluno: {alunos[i][0]} teve como média {(alunos[i][1] + alunos[i][2]) / 2:.2f}')
-
+        print('-=' * 30)
         while True:
             resp2 = str(input('Deseja ver as notas de algum aluno? [S/N] ')).strip().upper()[0]
             if resp2 in 'SN':
@@ -35,7 +35,9 @@ while True:
                 nome = str(input('Escreva o nome do aluno para ver suas notas: ')).strip().title()
                 for i in range(0, len(alunos)):
                     if alunos[i][0] == nome:
-                        print(f'As notas de {alunos[i][0]} foram {alunos[i][1]} e {alunos[i][2]}')
+                        print('-=' * 30)
+                        print(f'As notas de {alunos[i][0]} foram {alunos[i][1]} e {alunos[i][2]} e sua média é {(alunos[i][1] + alunos[i][2]) / 2:.2f}')
+                        print('-=' * 30)
                         break
                     else:
                         print('\033[91mTente novamente. \033[0m', end='')

@@ -7,7 +7,7 @@ while True:
 
         for i in range(0, 3):
             for j in range(0, 3):
-                print(f'[{lista_num[i][j]:^5}]', end='')
+                print(f'[{lista_num[i][j]:^7}]', end='')
             print()
 
         soma_par = 0

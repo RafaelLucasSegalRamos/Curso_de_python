@@ -4,7 +4,7 @@ while True:
         while True:
             num = (int(input('Digite um valor: ')))
             if num == 0:
-                print('\033[91mZero é um número nulo! Não irei adicionar[m')
+                print('\033[91mZero é um número nulo! Não irei adicionar\033[0m')
             elif num % 2 == 0:
                 lista_num[0].append(num)
             else:
@@ -15,7 +15,7 @@ while True:
                 if continuar2 in 'SN':
                     break
                 else:
-                    print('\033[91mTente novamente. ', end='')
+                    print('\033[91mTente novamente. \033[0m', end='')
             if continuar2 == 'N':
                 break
         print(f'Os valores pares digitados foram {lista_num[0]}')
