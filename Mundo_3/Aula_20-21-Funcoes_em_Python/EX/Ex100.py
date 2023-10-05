@@ -2,8 +2,6 @@ from random import randint
 from time import sleep
 
 
-
-
 def sorteia():
     print('Sorteando 5 valores da lista: ', end='')
     lista = []
