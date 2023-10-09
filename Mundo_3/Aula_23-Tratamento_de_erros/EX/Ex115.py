@@ -14,28 +14,29 @@ while True:
     try:
 
         cont += 1
-        print('-'*30)
-        print(f'{"MENU PRINCIPAL":^30}')
-        print('-'*30)
-        print(f'{"1 - Ver pessoas cadastradas":<30}')
-        print(f'{"2 - Cadastrar nova pessoa":<30}')
-        print(f'{"3 - Sair do sistema":<30}')
-        print('-'*30)
+        print('-'*40)
+        print(f'{"MENU PRINCIPAL":^40}')
+        print('-'*40)
+        print(f'{"1 - Ver pessoas cadastradas":<40}')
+        print(f'{"2 - Cadastrar nova pessoa":<40}')
+        print(f'{"3 - Sair do sistema":<40}')
+        print('-'*40)
         opcao = int(input('Sua opção: '))
         sleep(1.5)
         if opcao == 2:
-            dados['nome'] = str(input('Nome: ').capitalize())
-            dados['idade'] = int(input('Idade: '))
-            dic[f'pessoa{cont}'] = dados.copy()
+            nome = str(input('Nome: ').capitalize())
+            idade = int(input('Idade: '))
+            cadastrar(nome, idade, arq)
 
         elif opcao == 1:
-            print('-'*30)
-            print(f'{"PESSOAS CADASTRADAS":^30}')
-            print('-'*30)
-            print(f'{"NOME":<20}{"IDADE":<10}')
-            for c in dic:
-                print(f'{dic[c]["nome"]:<20}{dic[c]["idade"]:<10}')
-                sleep(0.5)
+            print('-'*40)
+            print(f'{"PESSOAS CADASTRADAS":^40}')
+            print('-'*40)
+            print(f'{"NOME":<30}{"IDADE":<10}')
+            linhas = Ex115.lerArquivo(arq)
+            for linha in linhas:
+                linha = linha.split(';')
+                print(f'{linha[0]:<30}{linha[1]:<10}')
         elif opcao == 3:
             print('Saindo do sistema...')
             break
